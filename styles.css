@@ -1,0 +1,155 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo span {
+  color: orangered;
+}
+
+.links a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 20px;
+  position: relative;
+}
+
+.links a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: orangered;
+  border-radius: 10px;
+  left: 0;
+  bottom: -3px;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.links a:hover:before {
+  transform: scaleX(1);
+}
+
+.btn {
+  padding: 8px 30px;
+  background: #fff;
+  color: orangered;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav .btn:hover {
+  transform: scale(1.1);
+}
+
+.main {
+  color: #fff;
+  padding: 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.content h4 {
+  font-size: 23px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.content h1 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 10px;
+  color: orangered;
+}
+
+.content h1 span {
+  font-size: 130px;
+  letter-spacing: 5px;
+}
+
+.content p {
+  margin: 20px 0 30px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #bbb;
+  max-width: 500px;
+}
+
+.content .btn {
+  background: orangered;
+  color: #fff;
+}
+
+.content .btn:hover {
+  opacity: 0.8;
+}
+
+.content .social-links {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  background: orangered;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.social-links a:hover {
+  transform: translateX(15px);
+}
